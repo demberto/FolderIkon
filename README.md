@@ -1,5 +1,9 @@
 # FolderIkon
 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/folderikon?color=g)
+![PyPI - Status](https://img.shields.io/pypi/status/folderikon)
+![Lines of code](https://img.shields.io/tokei/lines/github/demberto/folderikon?label=loc)
+
 > A Windows utility to set folder icons.
 
 Normally, setting a folder icon (not to be confused with a folder picture) through Windows Explorer requires an icon of ICO format, this means converting it first. Also changing the folder name will make the icon ineffective.
