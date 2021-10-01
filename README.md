@@ -59,5 +59,5 @@ optional arguments:
 
 ### [Changelog](CHANGELOG.md)
 
-### [License]
+### License
 MIT License
