@@ -1,4 +1,11 @@
-from .cli import main
+from .argparser import argparser
+from .folderikon import FolderIkon
 
-if __name__ == '__main__':
+
+def main():
+    args = argparser.parse_args()
+    FolderIkon(args).iconize()
+
+
+if __name__ == "__main__":
     main()

@@ -2,6 +2,7 @@
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/folderikon?color=g)
 ![PyPI - Status](https://img.shields.io/pypi/status/folderikon)
+![PyPI - License](https://img.shields.io/pypi/l/folderikon)
 ![Lines of code](https://img.shields.io/tokei/lines/github/demberto/folderikon?label=loc)
 
 > A Windows utility to set folder icons.
@@ -37,7 +38,10 @@ Set `image` as the folder icon of `folder` and name the icon as `icon`
 folderikon -i image -d folder -o icon
 ```
 
-Extended usage information:
+## Note
+It may take some time; or a restart of Windows Explorer for the folder icon to appear.
+
+## Command-line options
 ```
 folderikon [-h] [--image IMAGE] [--icon ICON] [--folder FOLDER] [--delete-original] [--raise-on-existing] [--dont-hide-icon] [--silent] [--no-color]
 
@@ -63,5 +67,5 @@ optional arguments:
 
 ### [Changelog](CHANGELOG.md)
 
-### License
-MIT License
+## Licence
+FolderIkon is distributed under the **MIT License**
