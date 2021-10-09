@@ -2,14 +2,15 @@
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/folderikon?color=g)
 ![PyPI - Status](https://img.shields.io/pypi/status/folderikon)
-![PyPI - License](https://img.shields.io/pypi/l/folderikon)
+![License](https://img.shields.io/badge/license-MIT-green)
 ![Lines of code](https://img.shields.io/tokei/lines/github/demberto/folderikon?label=loc)
+![Code Style: Black](https://img.shields.io/badge/code%20style-black-black)
 
 > A Windows utility to set folder icons.
 
 Normally, setting a folder icon (not to be confused with a folder picture) through Windows Explorer requires an icon of ICO format, this means converting it first. Also changing the folder name will make the icon ineffective.
 
-**FolderIkon** will take a JPG, ICO or a PNG file, convert it, create/edit the configuration file `desktop.ini`, set the appropriate permissions and [notify the Shell](https://docs.microsoft.com/windows/win32/api/shlobj_core/nf-shlobj_core-shchangenotify) about the icon. The icon will be hidden as it has generally no other use, *also it is a 256x256 image, nothing beautiful*.
+**FolderIkon** will take a JPG, ICO or a PNG file, convert it, create/edit the configuration file `desktop.ini`, set the appropriate permissions and [notify the Shell](https://docs.microsoft.com/windows/win32/api/shlobj_core/nf-shlobj_core-shchangenotify) about the icon. The icon will be hidden as it has generally no other use, _also it is a 256x256 image, nothing beautiful_.
 
 However tilted images e.g those of product boxes etc. will not be displayed properly. A square image is recommended for optimum results. I suggest not to use images of other aspect ratios although they will work.
 
@@ -24,24 +25,29 @@ pip install --upgrade folderikon
 ## Usage
 
 Set the first ICO, JPG or PNG found in the current folder as the folder icon (subfolders not included).
+
 ```
 folderikon
 ```
 
 Set `image` as the folder icon of the current folder. `image` can be a URL as well.
+
 ```
 folderikon -i image
 ```
 
 Set `image` as the folder icon of `folder` and name the icon as `icon`
+
 ```
 folderikon -i image -d folder -o icon
 ```
 
 ## Note
+
 It may take some time; or a restart of Windows Explorer for the folder icon to appear.
 
 ## Command-line options
+
 ```
 folderikon [-h] [--image IMAGE] [--icon ICON] [--folder FOLDER] [--delete-original] [--raise-on-existing] [--dont-hide-icon] [--silent] [--no-color]
 
@@ -50,7 +56,7 @@ A Windows utility to set folder icons.
 optional arguments:
   -h, --help            show this help message and exit
   --image IMAGE, --input IMAGE, -i IMAGE
-                        The image to set as folder icon. JPG, ICO and PNG formats are supported. URLs can be specified as well. Defaults to the       
+                        The image to set as folder icon. JPG, ICO and PNG formats are supported. URLs can be specified as well. Defaults to the
                         first JPG/PNG file found in the current folder.
   --icon ICON, --output ICON, -o ICON
                         Output icon file name. Defaults to the name of first JPG/PNG found in current folder saved with a '.ico' extension.
@@ -68,4 +74,5 @@ optional arguments:
 ### [Changelog](CHANGELOG.md)
 
 ## Licence
+
 FolderIkon is distributed under the **MIT License**

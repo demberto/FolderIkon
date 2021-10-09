@@ -22,7 +22,8 @@
         {
             "label": "black",
             "type": "shell",
-            "command": "black ."
+            "command": "black .",
+            "problemMatcher": []
         }
     ]
 }
